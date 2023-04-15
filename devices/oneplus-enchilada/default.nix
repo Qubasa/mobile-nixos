@@ -23,5 +23,10 @@
 
   mobile.system.android.device_name = "OnePlus6";
 
-  mobile.quirks.qualcomm.q6voiced.enable = true;
+  mobile.quirks.qualcomm.q6voiced = {
+    enable = true;
+    card = 0;
+    device = 6;
+  };
+
 }
