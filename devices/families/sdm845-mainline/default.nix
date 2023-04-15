@@ -14,6 +14,12 @@
     kernel.package = (pkgs.callPackage ./kernel { });
   };
 
+  mobile.quirks.qualcomm.q6voiced = {
+    enable = true;
+    card = 0;
+    device = 6;
+  };
+
   hardware.enableRedistributableFirmware = true;
 
   # Note: on devices it's highly likely no firmware is required during stage-1.

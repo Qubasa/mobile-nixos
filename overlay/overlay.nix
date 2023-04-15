@@ -33,6 +33,7 @@ in
     ply-image = callPackage ./ply-image { };
     qc-image-unpacker = callPackage ./qc-image-unpacker { };
     ufdt-apply-overlay = callPackage ./ufdt-apply-overlay {};
+    q6voiced = callPackage ./q6voiced { };
 
     # Extra "libs"
     mkExtraUtils = import ./lib/extra-utils.nix {
