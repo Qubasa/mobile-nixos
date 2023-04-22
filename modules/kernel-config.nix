@@ -37,6 +37,9 @@ in
         module = yes;
       in {
         PSI = yes;
+
+        REGULATOR_QCOM_USB_VBUS = yes;
+        TYPEC_QCOM_PMIC = yes;
         ANDROID = whenBetween "3.19" "6.0" yes;
         ANDROID_BINDER_IPC = whenAtLeast "3.19" yes;
         ANDROID_BINDERFS = whenAtLeast "5.0" yes;
