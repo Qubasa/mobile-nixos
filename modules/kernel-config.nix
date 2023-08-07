@@ -41,6 +41,8 @@ in
         RD_GZIP = yes;
         RD_XZ = yes;
 
+        DRM_UDL = yes;
+
         # Executive decision that EXT4 is required.
         EXT4_FS = yes;
         EXT4_FS_POSIX_ACL = yes;
