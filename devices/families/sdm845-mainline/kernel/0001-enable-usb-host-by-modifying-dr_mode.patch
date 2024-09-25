@@ -1,0 +1,26 @@
+From 6cddfdfaae5f363fc65c8d6b68fd8063d8127638 Mon Sep 17 00:00:00 2001
+From: matthewcroughan <matt@croughan.sh>
+Date: Wed, 25 Sep 2024 08:40:32 +0100
+Subject: [PATCH] enable usb host by modifying dr_mode
+
+---
+ arch/arm64/boot/dts/qcom/sdm845-oneplus-common.dtsi | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm64/boot/dts/qcom/sdm845-oneplus-common.dtsi b/arch/arm64/boot/dts/qcom/sdm845-oneplus-common.dtsi
+index 5f4d18aa33fa..5f453e30ea2e 100644
+--- a/arch/arm64/boot/dts/qcom/sdm845-oneplus-common.dtsi
++++ b/arch/arm64/boot/dts/qcom/sdm845-oneplus-common.dtsi
+@@ -859,7 +859,7 @@ &usb_1_dwc3 {
+ 	/*
+ 	 * We don't have the capability to switch modes yet.
+ 	 */
+-	dr_mode = "peripheral";
++	dr_mode = "host";
+ 
+ 	/* fastest mode for USB 2 */
+ 	maximum-speed = "high-speed";
+-- 
+2.46.0
+
+

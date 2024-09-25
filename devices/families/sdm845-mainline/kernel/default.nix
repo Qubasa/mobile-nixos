@@ -14,6 +14,10 @@ mobile-nixos.kernel-builder {
     hash = "sha256-v48UfKESS7SQhLmgsRT6b1IoEcjuhnXBANGUVYz7WSs=";
   };
 
+  patches = [
+    ./0001-enable-usb-host-by-modifying-dr_mode.patch
+  ];
+
   isModular = true;
   isCompressed = "gz";
 }
