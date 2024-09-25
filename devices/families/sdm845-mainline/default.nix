@@ -9,17 +9,17 @@
     soc = "qualcomm-sdm845";
   };
 
-  mobile.kernel.structuredConfig = [
-    (helpers: with helpers; {
-      ZSWAP = yes;
-      SERIO = yes;
-      ETHERNET = yes; # qcom rmnet depends on this
-    })
-  ];
+#  mobile.kernel.structuredConfig = [
+#    (helpers: with helpers; {
+#      ZSWAP = yes;
+#      SERIO = yes;
+#      ETHERNET = yes; # qcom rmnet depends on this
+#    })
+#  ];
 
   mobile.boot.stage-1 = {
-    enable = true;
-    kernel.modular = true;
+#    enable = true;
+#    kernel.modular = true;
     compression = "xz";
     kernel.package = (pkgs.callPackage ./kernel { });
   };
